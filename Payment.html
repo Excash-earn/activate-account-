@@ -114,7 +114,7 @@ Please choose the plan that best fits your needs.
 
 <div class="plan">
 <h2>Level 1</h2>
-<div class="price">₦7,000</div>
+<div class="price">₦5,000</div>
 <ul>
 <li>Access to basic platform features</li>
 <li>Member dashboard</li>
@@ -161,6 +161,51 @@ function goToPayment(plan){
     alert("You selected " + plan + ". Integrate this button with your secure payment provider (e.g. Paystack or Flutterwave).");
 }
 </script>
+    <!-- Your plan cards -->
+
+<button onclick="goToPayment('Level 1')">
+Continue to Secure Payment
+</button>
+
+<button onclick="goToPayment('Level 2')">
+Continue to Secure Payment
+</button>
+
+<button onclick="goToPayment('Level 3')">
+Continue to Secure Payment
+</button>
+
+<button onclick="goToPayment('Level 4')">
+Continue to Secure Payment
+</button>
+
+<!-- Put this at the bottom of the page -->
+<script>
+
+function goToPayment(level){
+
+    if(level=="Level 1"){
+        window.location.href="https://selar.com/o852789331";
+    }
+
+    else if(level=="Level 2"){
+        window.location.href="YOUR_LEVEL_2_PAYMENT_LINK";
+    }
+
+    else if(level=="Level 3"){
+        window.location.href="YOUR_LEVEL_3_PAYMENT_LINK";
+    }
+
+    else if(level=="Level 4"){
+        window.location.href="YOUR_LEVEL_4_PAYMENT_LINK";
+    }
+
+}
+
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
