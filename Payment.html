@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Successful | Excash</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#111827,#4f46e5,#00c853);
+color:#fff;
+padding:30px;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+}
+
+.success{
+background:#161b22;
+padding:30px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,255,153,.25);
+margin-bottom:40px;
+}
+
+.success h1{
+color:#00ff99;
+margin-bottom:10px;
+}
+
+.success p{
+color:#ddd;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.plan{
+background:#161b22;
+padding:25px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 0 15px rgba(0,255,153,.15);
+}
+
+.plan h2{
+color:#00ff99;
+margin-bottom:10px;
+}
+
+.price{
+font-size:32px;
+font-weight:bold;
+margin:20px 0;
+}
+
+.plan ul{
+list-style:none;
+margin-bottom:20px;
+}
+
+.plan ul li{
+margin:8px 0;
+color:#ddd;
+}
+
+button{
+width:100%;
+padding:14px;
+background:#00ff99;
+border:none;
+border-radius:10px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+opacity:.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="success">
+<h1>✅ Registration Successful!</h1>
+
+<p>
+Welcome to <strong>Excash</strong>. Your account has been created successfully.
+Please choose the plan that best fits your needs.
+</p>
+
+</div>
+
+<div class="grid">
+
+<div class="plan">
+<h2>Level 1</h2>
+<div class="price">₦7,000</div>
+<ul>
+<li>Access to basic platform features</li>
+<li>Member dashboard</li>
+</ul>
+<button onclick="goToPayment('Level 1')">Continue to Secure Payment</button>
+</div>
+
+<div class="plan">
+<h2>Level 2</h2>
+<div class="price">₦12,000</div>
+<ul>
+<li>Additional platform features</li>
+<li>Priority support</li>
+</ul>
+<button onclick="goToPayment('Level 2')">Continue to Secure Payment</button>
+</div>
+
+<div class="plan">
+<h2>Level 3</h2>
+<div class="price">₦16,000</div>
+<ul>
+<li>Premium feature access</li>
+<li>Advanced tools</li>
+</ul>
+<button onclick="goToPayment('Level 3')">Continue to Secure Payment</button>
+</div>
+
+<div class="plan">
+<h2>Level 4</h2>
+<div class="price">₦20,000</div>
+<ul>
+<li>Full platform access</li>
+<li>Premium support</li>
+</ul>
+<button onclick="goToPayment('Level 4')">Continue to Secure Payment</button>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function goToPayment(plan){
+    alert("You selected " + plan + ". Integrate this button with your secure payment provider (e.g. Paystack or Flutterwave).");
+}
+</script>
+
+</body>
+</html>
